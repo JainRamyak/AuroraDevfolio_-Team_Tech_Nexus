@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultancy Sessions</title>
+    <link rel="stylesheet" href="lesson.css">
+</head>
+<body>
+    <header>
+        <h1>FitPulse - Book a Lesson</h1>
+        <p>Get personalized fitness consultancy sessions with our expert instructors.</p>
+    </header>
+    <main>
+        <!-- <img src="consultancy.jpg" alt="Consultancy image" aria-hidden="true"> -->
+        <section class="lesson-types" aria-labelledby="lesson-types-heading">
+            <h2 id="lesson-types-heading">Choose a Lesson Type</h2>
+            <fieldset>
+                <legend>Lesson Type</legend>
+                <ul>
+                    <li class="list">
+                        <input type="radio" id="private-lesson" name="lesson-type" value="private" aria-label="Private Lesson">
+                        <label for="private-lesson">Private Lesson (Rs.5000)</label>
+                        <p>A personalized one-on-one lesson with our expert instructors.</p>
+                        <ul class="les">
+                            <li>Personalized attention and feedback</li>
+                            <li>Customized workout plan tailored to your goals</li>
+                            <li>Flexible scheduling to fit your needs</li>
+                        </ul>
+                    </li>
+                    <li class="list">
+                        <input type="radio" id="group-lesson" name="lesson-type" value="group" aria-label="Group Lesson">
+                        <label for="group-lesson">Group Lesson (Rs.3500)</label>
+                        <p>A fun and interactive group lesson with up to 5 participants.</p>
+                        <ul class="les">
+                            <li>Social and motivating environment</li>
+                            <li>Learn from others and make new friends</li>
+                            <li>Cost-effective option for group fitness</li>
+                        </ul>
+                    </li>
+                    <li class="list">
+                        <input type="radio" id="junior-lesson" name="lesson-type" value="junior" aria-label="Junior Lesson">
+                        <label for="junior-lesson">Junior Lesson (Rs.2500)</label>
+                        <p>A specialized lesson designed for children aged between 5-12.</p>
+                        <ul class="les">
+                            <li>Fun and engaging activities for kids</li>
+                            <li>Develops motor skills and coordination</li>
+                            <li>Builds confidence and self-esteem</li>
+                        </ul>
+                    </li>
+                </ul>
+            </fieldset>
+        </section>
+        <div class="mainbox">
+            <section class="schedule" aria-labelledby="schedule-heading">
+                <h2 id="schedule-heading">Select a Date and Time</h2>
+                <input type="date" id="lesson-date" value="2023-03-01">
+                <i class="fas fa-calendar-alt"></i>
+                <select class="lesson-time">
+                    <option value="9:00 AM">9:00 AM</option>
+                    <option value="10:00 AM">10:00 AM</option>
+                    <option value="11:00 AM">11:00 AM</option>
+                    <option value="1:00 PM">1:00 PM</option>
+                    <option value="2:00 PM">2:00 PM</option>
+                    <option value="3:00 PM">3:00 PM</option>
+                </select>
+                <small>(IST - Indian Standard Time)</small>
+                <p class="time">Not sure about the time zone? <a href="https://www.worldtimebuddy.com/" target="_blank">Convert to your local time zone</a>.</p>
+            <section class="instructor" aria-labelledby="instructor-heading">
+                <h2 id="instructor-heading">Select an Instructor</h2>
+                <select id="instructor">
+                    <option value="Mahi Singhal">Mahi Singhal</option>
+                    <p>Expert in yoga and meditation with 5+ years of experience. Mahi has a calm and soothing approach to teaching, helping students relax and focus.</p>
+                    <option value="Ramyak Jain">Ramyak Jain</option>
+                    <p>Certified fitness trainer with a specialization in weightlifting. Ramyak is a high-energy instructor who motivates students to push their limits and achieve their fitness goals.</p>
+                    <option value="Prince Kumar">Prince Kumar</option>
+                    <p>Seasoned instructor with a focus on cardio and aerobics. Prince is a fun and engaging teacher who creates a lively atmosphere in his classes, making exercise feel like a party.</p>
+                </select>
+            </section>
+            <button id="book-lesson">Book Lesson</button>   
+    </div>
+    </main>
+    <script src="lesson.js" defer></script>
+</body>
+</html>

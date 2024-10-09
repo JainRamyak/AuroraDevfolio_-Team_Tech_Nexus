@@ -1,0 +1,279 @@
+/* lesson.html */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    background-attachment: fixed;
+  }
+  header {
+    background: linear-gradient(to right, #028c81, #05742f);
+    background-attachment: fixed;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  main {
+    max-width: 1500px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: url('consultancy1.JPG') ;
+    background-size: 100% 100%;
+    background-attachment: fixed;   
+    background-repeat: no-repeat; 
+  }
+  
+  h1, h2 {
+    color: white;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  input[type="date"] {
+    max-width: 600px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px ;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color:#05742f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color:#06411c;
+  }
+  legend{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: #333;
+    border: 2px #ddd solid;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  small{
+    color: white;
+    margin-bottom: 40px;
+  }
+  .time{
+    color: #ccc;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+  .time a{
+    color:#333;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+    padding: 10px;
+    text-decoration: none;
+  }
+  
+  .lesson-types {
+    margin-bottom: 40px;
+  }
+  #lesson-types-heading{
+    text-align: center;
+    font-size: 40px;
+  }
+  
+  .lesson-types fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .lesson-types legend {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .lesson-types ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+.lesson-types li {
+    display: flex;
+    flex-direction: column;
+    width: calc(33.33% - 20px);
+    color:white;
+    margin: 10px;
+    padding: 5px;
+    background-color: black;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .list p{
+    text-align: center;
+  }
+  .les li{
+    background-color:#05742f;
+  }
+  .les li:hover{
+    background-color:#06411cdd;
+  }
+  .list:hover {
+    background-color:rgba(0, 0, 0, 0.773);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  label{
+    text-align: center;
+  }
+
+  
+  .schedule {
+    margin-bottom: 40px;
+    opacity: 20;
+    text-align: center;
+
+  }
+  
+  .schedule h2 {
+    margin-bottom: 30px;
+  }
+  
+  .schedule input[type="date"] {
+    width: 100%;
+  }
+  
+  .schedule select {
+    width: 100%;
+  }
+  
+  .instructor {
+    margin-bottom: 40px;
+  }
+  
+  .instructor h2 {
+    margin-bottom: 30px;
+  }
+  
+  .instructor select {
+    width: 100%;
+  }
+  div{
+    margin-left: 350px;
+  }
+  .mainbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px  solid #ddd;
+    border-radius: 10px;
+    max-width: 800px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.575);
+    animation: fadeIn  0.5s ease-in-out;
+
+  }
+  .mainbox:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+  /* Media Queries */
+  
+  @media (max-width: 768px) {
+    main {
+      margin: 20px auto;
+    }
+    .lesson-types ul {
+      flex-direction: column;
+    }
+    .lesson-types li {
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    main {
+      margin: 10px auto;
+    }
+    .schedule input[type="date"] {
+      width: 100%;
+    }
+    .schedule select {
+      width: 100%;
+    }
+  }
